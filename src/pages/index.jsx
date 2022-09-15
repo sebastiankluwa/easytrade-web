@@ -1,4 +1,6 @@
-export { default as Ecommerce } from './Ecommerce';
+export { default as Investment } from './Investment';
+export { default as Investor } from './Investor';
+export { default as Backtesting } from './Backtesting';
 export { default as Kanban } from './Kanban';
 export { default as Orders } from './Orders';
 export { default as Employees } from './Employees';
