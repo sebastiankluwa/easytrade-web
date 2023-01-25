@@ -11,6 +11,9 @@ const Customers = () => {
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+      <style>
+          {SAMPLE_CSS}
+        </style>
       <Header category="Page" title="Customers" />
       <GridComponent
         dataSource={customersData}
@@ -21,6 +24,7 @@ const Customers = () => {
         toolbar={toolbarOptions}
         editSettings={editing}
         allowSorting
+        enableAdaptiveUI={true}
       >
         <ColumnsDirective>
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}

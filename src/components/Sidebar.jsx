@@ -5,7 +5,7 @@ import { FiTrendingUp } from 'react-icons/fi';
 import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { links } from '../data/dummy';
+import { routes } from '../data/routes';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const Sidebar = () => {
@@ -40,12 +40,12 @@ const Sidebar = () => {
             </TooltipComponent>
           </div>
           <div className="mt-10 ">
-            {links.map((item) => (
+            {routes.map((item) => (
               <div key={item.title}>
                 <p className="text-gray-400 dark:text-gray-400 m-3 mt-4 uppercase">
                   {item.title}
                 </p>
-                {item.links.map((link) => (
+                {item.routes.map((link) => (
                   <NavLink
                     to={`/${link.path}`}
                     key={link.name}

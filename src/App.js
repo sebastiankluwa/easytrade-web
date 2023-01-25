@@ -4,7 +4,15 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Investment, Investor, Backtesting, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
+
+import { 
+  CryptocurrenciesMarket,
+  StockChart, 
+  Investment, 
+  Investor, 
+  Backtesting 
+} from './pages';
+
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
@@ -53,7 +61,7 @@ const App = () => {
           <div
             className={
               activeMenu
-                ? 'dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-72 w-full  '
+                ? 'dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-72 md:w-[calc(100%-18rem)]  '
                 : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 '
             }
           >
@@ -68,29 +76,13 @@ const App = () => {
                 <Route path="/" element={(<Investment />)} />
                 <Route path="/investment" element={(<Investment />)} />
 
-                {/* pages  */}
-                <Route path="/orders" element={<Orders />} />
-                <Route path="/employees" element={<Employees />} />
-                <Route path="/customers" element={<Customers />} />
-
-                {/* apps  */}
+                {/* markets  */}
+                <Route path="/markets/cryptocurrencies/prices-overview" element={<CryptocurrenciesMarket />} />
                 <Route path="/investor" element={<Investor />} />
                 <Route path="/backtesting" element={<Backtesting />} />
-                <Route path="/kanban" element={<Kanban />} />
-                <Route path="/editor" element={<Editor />} />
-                <Route path="/calendar" element={<Calendar />} />
-                <Route path="/color-picker" element={<ColorPicker />} />
 
                 {/* charts  */}
-                <Route path="/line" element={<Line />} />
-                <Route path="/area" element={<Area />} />
-                <Route path="/bar" element={<Bar />} />
-                <Route path="/pie" element={<Pie />} />
-                <Route path="/financial" element={<Financial />} />
-                <Route path="/color-mapping" element={<ColorMapping />} />
-                <Route path="/pyramid" element={<Pyramid />} />
-                <Route path="/stacked" element={<Stacked />} />
-
+                <Route path="/chart" element={<StockChart />} />
               </Routes>
             </div>
             <Footer />

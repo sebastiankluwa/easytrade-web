@@ -1,0 +1,838 @@
+{
+    "symbols": [
+        {
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / U.S. dollar",
+			"type": "spot",
+			"exchange": "BITSTAMP",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "bitstamp",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / United States Dollar",
+			"type": "spot",
+			"exchange": "COINBASE",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "coinbase",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin all time history index",
+			"type": "spot",
+			"exchange": "INDEX",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "tvc",
+			"typespecs": [
+				"crypto",
+				"synthetic"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / Dollar",
+			"type": "spot",
+			"exchange": "BITFINEX",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "bitfinex",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / US Dollar (calculated by TradingView)",
+			"type": "crypto",
+			"exchange": "BINANCE",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "binance",
+			"typespecs": [
+				"synthetic"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / U. S. Dollar",
+			"type": "spot",
+			"exchange": "KRAKEN",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "kraken",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / USD",
+			"type": "crypto",
+			"exchange": "BINANCEUS",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "binance"
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin",
+			"type": "spot",
+			"exchange": "OANDA",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "oanda",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / U.S. Dollar",
+			"type": "spot",
+			"exchange": "GEMINI",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "gemini",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin vs US Dollar",
+			"type": "spot",
+			"exchange": "PEPPERSTONE",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "pepperstone",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / US Dollar",
+			"type": "spot",
+			"exchange": "EIGHTCAP",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "eightcap",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin",
+			"type": "spot",
+			"exchange": "CRYPTO",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "tvc",
+			"typespecs": [
+				"crypto",
+				"cryptoasset",
+				"synthetic"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / USD",
+			"type": "spot",
+			"exchange": "CAPITALCOM",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "capitalcom",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / USD",
+			"type": "spot",
+			"exchange": "Currency.com",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "currencycom",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			],
+			"prefix": "CURRENCYCOM"
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin/U.S. Dollar",
+			"type": "spot",
+			"exchange": "FXCM",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "fxcm",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			],
+			"prefix": "FX"
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / US Dollar",
+			"type": "spot",
+			"exchange": "BITTREX",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "bittrex",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / U.S. Dollar",
+			"type": "spot",
+			"exchange": "FOREX.com",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "gain",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			],
+			"prefix": "FOREXCOM"
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "BTC / USD (0x42544...00000)",
+			"type": "swap",
+			"exchange": "DYDX",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "dydx",
+			"typespecs": [
+				"crypto",
+				"perpetual",
+				"dex"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / U.S. dollar",
+			"type": "spot",
+			"exchange": "TradeStation",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "tradestation",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			],
+			"prefix": "TRADESTATION"
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin vs US Dollar",
+			"type": "spot",
+			"exchange": "VANTAGE",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "vantagefx",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "BTCUSD Futures Contract",
+			"type": "futures",
+			"exchange": "BYBIT",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"logoid": "crypto/XTVCBTC",
+			"provider_id": "bybit",
+			"contracts": [
+				{
+					"symbol": "BTCUSDM2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jun 2023"
+				},
+				{
+					"symbol": "BTCUSDH2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Mar 2023"
+				}
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin/US Dollar",
+			"type": "spot",
+			"exchange": "SAXO",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "saxobank",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "BTCUSD Futures Contract (Jan 2023)",
+			"type": "futures",
+			"exchange": "KRAKEN",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"logoid": "crypto/XTVCBTC",
+			"provider_id": "kraken",
+			"contracts": [
+				{
+					"symbol": "BTCUSDH2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Mar 2023"
+				},
+				{
+					"symbol": "BTCUSDM2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jun 2023"
+				},
+				{
+					"symbol": "BTCUSDF2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jan 2023"
+				}
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / United States dollar",
+			"type": "spot",
+			"exchange": "OKCOIN",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "okcoin",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / Dollar",
+			"type": "spot",
+			"exchange": "CEXIO",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "cexio",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "BTCUSD Futures Contract",
+			"type": "futures",
+			"exchange": "OKX",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"logoid": "crypto/XTVCBTC",
+			"provider_id": "okx",
+			"contracts": [
+				{
+					"symbol": "BTCUSD31H2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Mar 2023"
+				},
+				{
+					"symbol": "BTCUSD30M2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jun 2023"
+				},
+				{
+					"symbol": "BTCUSD27F2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jan 2023"
+				},
+				{
+					"symbol": "BTCUSD20F2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jan 2023"
+				}
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin (BTC) / US Dollar",
+			"type": "spot",
+			"exchange": "EASYMARKETS",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "easymarkets",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin vs United States Dollar",
+			"type": "spot",
+			"exchange": "GLOBALPRIME",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "globalprime",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Digital Currency Bitcoin CFD",
+			"type": "spot",
+			"exchange": "SKILLING",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "skilling",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "BTCUSD Futures Contract",
+			"type": "futures",
+			"exchange": "HUOBI",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"logoid": "crypto/XTVCBTC",
+			"provider_id": "huobi",
+			"contracts": [
+				{
+					"symbol": "BTCUSD31H2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Mar 2023"
+				},
+				{
+					"symbol": "BTCUSD27F2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jan 2023"
+				},
+				{
+					"symbol": "BTCUSD20F2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jan 2023"
+				}
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "BTC Futures Contract",
+			"type": "futures",
+			"exchange": "DERIBIT",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "deribit",
+			"contracts": [
+				{
+					"symbol": "BTCUSD31H2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Mar 2023"
+				},
+				{
+					"symbol": "BTCUSD30M2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jun 2023"
+				},
+				{
+					"symbol": "BTCUSD29U2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Sep 2023"
+				},
+				{
+					"symbol": "BTCUSD29Z2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Dec 2023"
+				}
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin vs. USD",
+			"type": "spot",
+			"exchange": "BLACKBULL",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "blackbullmarkets",
+			"typespecs": [
+				"cfd",
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / US Dollar",
+			"type": "spot",
+			"exchange": "EXMO",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "exmo2",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "BTCUSD Futures Contract",
+			"type": "futures",
+			"exchange": "BTSE",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"logoid": "crypto/XTVCBTC",
+			"provider_id": "btse",
+			"contracts": [
+				{
+					"symbol": "BTCUSDH2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Mar 2023"
+				}
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin / US Dollar",
+			"type": "spot",
+			"exchange": "TIMEX",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "timex",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "BITCOIN / USD",
+			"type": "spot",
+			"exchange": "VELOCITY",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "velocitytrade",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin future quoted in US Dollar",
+			"type": "futures",
+			"exchange": "DELTA",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "delta",
+			"contracts": [
+				{
+					"symbol": "BTCUSD30U2022",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Sep 2022"
+				},
+				{
+					"symbol": "BTCUSD24M2022",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jun 2022"
+				}
+			]
+		},
+		{
+			"symbol": "BTCUSD",
+			"description": "Bitcoin ($) CFD",
+			"type": "spot",
+			"exchange": "CITYINDEX",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "cityindex",
+			"typespecs": [
+				"crypto",
+				"cfd"
+			]
+		},
+		{
+			"symbol": "BTCUSDT.P",
+			"description": "BTCUSDT Perpetual Contract",
+			"type": "swap",
+			"exchange": "BYBIT",
+			"currency_code": "USDT",
+			"currency-logoid": "crypto/XTVCUSDT",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "bybit",
+			"typespecs": [
+				"crypto",
+				"perpetual"
+			]
+		},
+		{
+			"symbol": "BTCUSD.P",
+			"description": "BTCUSD Perpetual Contract",
+			"type": "swap",
+			"exchange": "BYBIT",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "bybit",
+			"typespecs": [
+				"crypto",
+				"perpetual"
+			]
+		},
+		{
+			"symbol": "BTCUSDT.P",
+			"description": "BTCUSDT Perpetual Swap Contract",
+			"type": "swap",
+			"exchange": "OKX",
+			"currency_code": "USDT",
+			"currency-logoid": "crypto/XTVCUSDT",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "okx",
+			"typespecs": [
+				"crypto",
+				"perpetual"
+			]
+		},
+		{
+			"symbol": "BTCUSDT.P",
+			"description": "BTCUSDTPERP PERPETUAL MIX CONTRACT",
+			"type": "swap",
+			"exchange": "BITGET",
+			"currency_code": "USDT",
+			"currency-logoid": "crypto/XTVCUSDT",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "bitget",
+			"typespecs": [
+				"crypto",
+				"perpetual"
+			]
+		},
+		{
+			"symbol": "BTCUSDT",
+			"description": "BTCUSDT SPOT",
+			"type": "spot",
+			"exchange": "BITGET",
+			"currency_code": "USDT",
+			"currency-logoid": "crypto/XTVCUSDT",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "bitget",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSDSHORTS",
+			"description": "BTCUSD Shorts",
+			"type": "index",
+			"exchange": "BITFINEX",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "bitfinex",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSD.P",
+			"description": "BTCUSD Perpetual Swap Contract",
+			"type": "swap",
+			"exchange": "OKX",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "okx",
+			"typespecs": [
+				"crypto",
+				"perpetual"
+			]
+		},
+		{
+			"symbol": "BTCUSDLONGS",
+			"description": "BTCUSD Longs",
+			"type": "index",
+			"exchange": "BITFINEX",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "bitfinex",
+			"typespecs": [
+				"crypto"
+			]
+		},
+		{
+			"symbol": "BTCUSDT",
+			"description": "Bitcoin / TetherUS",
+			"type": "crypto",
+			"exchange": "BINANCE",
+			"currency_code": "USDT",
+			"currency-logoid": "crypto/XTVCUSDT",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "binance"
+		},
+		{
+			"symbol": "BTCUSD.P",
+			"description": "BTCUSDPERP PERPETUAL MIX CONTRACT",
+			"type": "swap",
+			"exchange": "BITGET",
+			"currency_code": "USD",
+			"currency-logoid": "country/US",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "bitget",
+			"typespecs": [
+				"crypto",
+				"perpetual"
+			]
+		},
+		{
+			"symbol": "BTCUSDT",
+			"description": "BTCUSDT Futures Contract",
+			"type": "futures",
+			"exchange": "OKX",
+			"currency_code": "USDT",
+			"currency-logoid": "crypto/XTVCUSDT",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"logoid": "crypto/XTVCBTC",
+			"provider_id": "okx",
+			"contracts": [
+				{
+					"symbol": "BTCUSDT31H2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Mar 2023"
+				},
+				{
+					"symbol": "BTCUSDT30M2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jun 2023"
+				},
+				{
+					"symbol": "BTCUSDT27F2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jan 2023"
+				},
+				{
+					"symbol": "BTCUSDT20F2023",
+					"typespecs": [
+						"crypto"
+					],
+					"description": "Jan 2023"
+				}
+			]
+		},
+		{
+			"symbol": "BTCUSDT",
+			"description": "Bitcoin / Tether",
+			"type": "spot",
+			"exchange": "KUCOIN",
+			"currency_code": "USDT",
+			"currency-logoid": "crypto/XTVCUSDT",
+			"base-currency-logoid": "crypto/XTVCBTC",
+			"provider_id": "kucoin",
+			"typespecs": [
+				"crypto"
+			]
+		}
+    ]
+}

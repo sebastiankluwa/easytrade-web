@@ -1,0 +1,48 @@
+import React from 'react';
+
+import { 
+    GridComponent, 
+    ColumnsDirective, 
+    ColumnDirective, 
+    Page, 
+    Selection,
+    Inject, 
+    Edit, 
+    Toolbar, 
+    Sort, 
+    Filter,
+    Freeze
+} from '@syncfusion/ej2-react-grids';
+
+import { 
+    marketsGrid, 
+    marketsData 
+} from './markets';
+
+const MarketsComponent = () => {
+    const selectionsettings = { persistSelection: true };
+    const toolbarOptions = [];
+  
+    return (
+        <GridComponent
+            dataSource={marketsData}
+            enableHover={false}
+            allowPaging
+            pageSettings={{ pageCount: 5 }}
+            selectionSettings={selectionsettings}
+            toolbar={toolbarOptions}
+            allowSorting
+            frozenColumns={1}
+            width='100%'
+            // enableAdaptiveUI={true}
+        >
+            <ColumnsDirective>
+            {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+            {marketsGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
+            </ColumnsDirective>
+            <Inject services={[Freeze, Page, Selection, Toolbar, Edit, Sort, Filter]} />
+        </GridComponent>
+    );
+  };
+
+  export default MarketsComponent;
