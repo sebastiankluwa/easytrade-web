@@ -1,5 +1,4 @@
-export { default as CryptocurrenciesMarket } from './Apps/CryptocurrenciesMarket';
-export { default as StockChart } from './Charts/StockChart';
-export { default as Investment } from './Investment';
-export { default as Investor } from './Investor';
-export { default as Backtesting } from './Backtesting';
+export { default as CryptocurrenciesPrices } from './Markets/CryptocurrenciesPrices';
+export { default as StockChart } from './Products/StockChart';
+export { default as Investment } from './Dashboard/Investment';
+export { default as CryptocurrenciesNews } from './Markets/CryptocurrenciesNews';

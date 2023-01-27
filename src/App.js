@@ -6,11 +6,10 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 
 import { 
-  CryptocurrenciesMarket,
+  CryptocurrenciesPrices,
   StockChart, 
   Investment, 
-  Investor, 
-  Backtesting 
+  CryptocurrenciesNews
 } from './pages';
 
 import './App.css';
@@ -77,9 +76,8 @@ const App = () => {
                 <Route path="/investment" element={(<Investment />)} />
 
                 {/* markets  */}
-                <Route path="/markets/cryptocurrencies/prices-overview" element={<CryptocurrenciesMarket />} />
-                <Route path="/investor" element={<Investor />} />
-                <Route path="/backtesting" element={<Backtesting />} />
+                <Route path="/markets/cryptocurrencies/prices" element={<CryptocurrenciesPrices />} />
+                <Route path="/markets/cryptocurrencies/news" element={<CryptocurrenciesNews />} />
 
                 {/* charts  */}
                 <Route path="/chart" element={<StockChart />} />

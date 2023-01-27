@@ -12,5 +12,7 @@ export { default as LineChart } from './Charts/LineChart';
 export { default as Stacked } from './Charts/Stacked';
 export { default as Pie } from './Charts/Pie';
 export { default as RichStockChartComponent } from './Charts/StockChart/RichStockChartComponent';
-export { default as Header } from './Header';
 export { default as ChartsHeader } from './Charts/ChartsHeader';
+export { default as MarketsComponent } from './Markets/MarketsComponent';
+export { default as NewsCard } from './Markets/NewsCard';
+export { default as Header } from './Header';
