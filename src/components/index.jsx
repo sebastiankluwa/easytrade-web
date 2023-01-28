@@ -15,4 +15,5 @@ export { default as RichStockChartComponent } from './Charts/StockChart/RichStoc
 export { default as ChartsHeader } from './Charts/ChartsHeader';
 export { default as MarketsComponent } from './Markets/MarketsComponent';
 export { default as NewsCard } from './Markets/NewsCard';
+export { default as Badge } from './Markets/Badge';
 export { default as Header } from './Header';

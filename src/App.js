@@ -73,14 +73,20 @@ const App = () => {
               <Routes>
                 {/* dashboard  */}
                 <Route path="/" element={(<Investment />)} />
-                <Route path="/investment" element={(<Investment />)} />
+                <Route path="/overview" element={(<Investment />)} />
+
+                {/* bots  */}
+                <Route path="/bots/management" element={<CryptocurrenciesPrices />} />
+                <Route path="/bots/configuration" element={<CryptocurrenciesNews />} />
 
                 {/* markets  */}
-                <Route path="/markets/cryptocurrencies/prices" element={<CryptocurrenciesPrices />} />
-                <Route path="/markets/cryptocurrencies/news" element={<CryptocurrenciesNews />} />
-
-                {/* charts  */}
-                <Route path="/chart" element={<StockChart />} />
+                <Route path="/markets/prices" element={<CryptocurrenciesPrices />} />
+                <Route path="/markets/news" element={<CryptocurrenciesNews />} />
+                <Route path="/markets/chart" element={<StockChart />} />
+                
+                {/* support  */}
+                <Route path="/support/faq" element={<CryptocurrenciesPrices />} />
+                <Route path="/support/contact" element={<CryptocurrenciesNews />} />
               </Routes>
             </div>
             <Footer />
