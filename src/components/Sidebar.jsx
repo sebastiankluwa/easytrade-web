@@ -7,6 +7,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { routes } from '../data/routes';
 import { useStateContext } from '../contexts/ContextProvider';
+import Dropdown from 'react-dropdown';
 
 const Sidebar = () => {
   const { currentColor, activeMenu, setActiveMenu, screenSize } = useStateContext();
@@ -46,18 +47,20 @@ const Sidebar = () => {
                   {item.title}
                 </p>
                 {item.routes.map((link) => (
-                  <NavLink
-                    to={`/${link.path}`}
-                    key={link.name}
-                    onClick={handleCloseSideBar}
-                    style={({ isActive }) => ({
-                      backgroundColor: isActive ? currentColor : '',
-                    })}
-                    className={({ isActive }) => (isActive ? activeLink : normalLink)}
-                  >
-                    {link.icon}
-                    <span className="capitalize ">{link.name}</span>
-                  </NavLink>
+                  <div>
+                    <NavLink
+                      to={`/${link.path}`}
+                      key={link.name}
+                      onClick={handleCloseSideBar}
+                      style={({ isActive }) => ({
+                        backgroundColor: isActive ? currentColor : '',
+                      })}
+                      className={({ isActive }) => (isActive ? activeLink : normalLink)}
+                    >
+                      {link.icon}
+                      <span className="capitalize ">{link.name}</span>
+                    </NavLink>
+                  </div>
                 ))}
               </div>
             ))}

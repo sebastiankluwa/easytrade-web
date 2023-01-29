@@ -34,6 +34,7 @@ const MarketsComponent = () => {
             allowSorting
             frozenColumns={1}
             width='100%'
+            className='dark:bg-secondary-dark-bg'
             // enableAdaptiveUI={true}
         >
             <ColumnsDirective>

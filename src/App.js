@@ -9,7 +9,11 @@ import {
   CryptocurrenciesPrices,
   StockChart, 
   Investment, 
-  CryptocurrenciesNews
+  CryptocurrenciesNews,
+  BotsManagement,
+  BotsConfiguration,
+  SupportContact,
+  SupportFaq
 } from './pages';
 
 import './App.css';
@@ -76,8 +80,8 @@ const App = () => {
                 <Route path="/overview" element={(<Investment />)} />
 
                 {/* bots  */}
-                <Route path="/bots/management" element={<CryptocurrenciesPrices />} />
-                <Route path="/bots/configuration" element={<CryptocurrenciesNews />} />
+                <Route path="/bots/management" element={<BotsManagement />} />
+                <Route path="/bots/configuration" element={<BotsConfiguration />} />
 
                 {/* markets  */}
                 <Route path="/markets/prices" element={<CryptocurrenciesPrices />} />
@@ -85,8 +89,8 @@ const App = () => {
                 <Route path="/markets/chart" element={<StockChart />} />
                 
                 {/* support  */}
-                <Route path="/support/faq" element={<CryptocurrenciesPrices />} />
-                <Route path="/support/contact" element={<CryptocurrenciesNews />} />
+                <Route path="/support/faq" element={<SupportFaq />} />
+                <Route path="/support/contact" element={<SupportContact />} />
               </Routes>
             </div>
             <Footer />
