@@ -3,7 +3,7 @@ export const convertDateToTimeAgo = (date) => {
     const dateTime = new Date(date).getTime();
     const timeDifference = currentTime - dateTime;
     
-    const hoursAgo = Math.floor(timeDifference / (1000 * 60 * 60));
+    const hoursAgo = (Math.floor(timeDifference / (1000 * 60 * 60)));
     if (hoursAgo >= 1) {
       return `${hoursAgo} hours ago`;
     }

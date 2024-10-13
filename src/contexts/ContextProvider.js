@@ -18,6 +18,12 @@ export const ContextProvider = ({ children }) => {
   const [isClicked, setIsClicked] = useState(initialState);
   const [currentCryptoPair, setCryptoPair] = useState("BTCUSDT");
   const [symbols, setSymbols] = useState(null);
+  const [activeCreateBot, setActiveCreateBot] = useState(false);
+  const [bots, setBots] = useState([]);
+  const [activeBotDetails, setActiveBotDetails] = useState(null);
+
+  const handleBotSubmit = (bot) => {
+    bots.push(bot)};
 
   const setMode = (e) => {
     setCurrentMode(e.target.value);
@@ -33,7 +39,7 @@ export const ContextProvider = ({ children }) => {
 
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <StateContext.Provider value={{ symbols, setSymbols, currentColor, currentMode, activeMenu, screenSize, setScreenSize, handleClick, isClicked, initialState, setIsClicked, setActiveMenu, setCurrentColor, setCurrentMode, setMode, setColor, themeSettings, setThemeSettings, currentCryptoPair, setCryptoPair }}>
+    <StateContext.Provider value={{ activeBotDetails, setActiveBotDetails, handleBotSubmit, bots, setBots, activeCreateBot, setActiveCreateBot, symbols, setSymbols, currentColor, currentMode, activeMenu, screenSize, setScreenSize, handleClick, isClicked, initialState, setIsClicked, setActiveMenu, setCurrentColor, setCurrentMode, setMode, setColor, themeSettings, setThemeSettings, currentCryptoPair, setCryptoPair }}>
       {children}
     </StateContext.Provider>
   );

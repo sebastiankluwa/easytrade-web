@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Redirect, Navigate } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
+import { Navbar, Footer, Sidebar, ThemeSettings, BotsSummary, BotsDetails, BotDashboard, BotTrades, BotSettings } from './components';
 
-import { 
+import {
   CryptocurrenciesPrices,
-  StockChart, 
-  Investment, 
+  StockChart,
+  Investment,
   CryptocurrenciesNews,
   BotsManagement,
   BotsConfiguration,
@@ -76,21 +76,27 @@ const App = () => {
 
               <Routes>
                 {/* dashboard  */}
-                <Route path="/" element={(<Investment />)} />
-                <Route path="/overview" element={(<Investment />)} />
+                <Route path="/" element={<Navigate to="/bots/management" />} /> 
 
                 {/* bots  */}
-                <Route path="/bots/management" element={<BotsManagement />} />
+                <Route path="/bots/management" element={<BotsManagement />} >
+                  <Route index element={<BotsSummary />} />
+                  <Route path=":botId" element={<BotsDetails />}>
+                    <Route index element={<BotDashboard />} />
+                    <Route path='dashboard' element={<BotDashboard />} />
+                    <Route path='positions' element={<BotTrades />} />
+                    <Route path='settings' element={<BotSettings />} />
+                  </Route>
+                </Route>
                 <Route path="/bots/configuration" element={<BotsConfiguration />} />
 
                 {/* markets  */}
                 <Route path="/markets/prices" element={<CryptocurrenciesPrices />} />
                 <Route path="/markets/news" element={<CryptocurrenciesNews />} />
                 <Route path="/markets/chart" element={<StockChart />} />
-                
+
                 {/* support  */}
                 <Route path="/support/faq" element={<SupportFaq />} />
-                <Route path="/support/contact" element={<SupportContact />} />
               </Routes>
             </div>
             <Footer />
