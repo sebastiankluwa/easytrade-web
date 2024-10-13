@@ -18,7 +18,7 @@ const Badge = ({ Symbol, Icon }) => {
             </style>
             <ChipListComponent id={parsedSymbol}>
                 <ChipsDirective>
-                    <ChipDirective leadingIconCss="card" text={Symbol} ></ChipDirective>
+                    <ChipDirective  leadingIconCss="card" text={Symbol} ></ChipDirective>
                 </ChipsDirective>
             </ChipListComponent>
         </div>

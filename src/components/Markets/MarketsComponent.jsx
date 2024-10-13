@@ -21,7 +21,6 @@ import {
 
 const MarketsComponent = () => {
     const selectionsettings = { persistSelection: true };
-    const toolbarOptions = [];
   
     return (
         <GridComponent
@@ -30,17 +29,17 @@ const MarketsComponent = () => {
             allowPaging
             pageSettings={{ pageCount: 5 }}
             selectionSettings={selectionsettings}
-            toolbar={toolbarOptions}
             allowSorting
             frozenColumns={1}
             width='100%'
+            className='dark:bg-secondary-dark-bg'
             // enableAdaptiveUI={true}
         >
             <ColumnsDirective>
             {/* eslint-disable-next-line react/jsx-props-no-spreading */}
             {marketsGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
             </ColumnsDirective>
-            <Inject services={[Freeze, Page, Selection, Toolbar, Edit, Sort, Filter]} />
+            <Inject services={[Freeze, Page, Selection, Edit, Sort, Filter]} />
         </GridComponent>
     );
   };

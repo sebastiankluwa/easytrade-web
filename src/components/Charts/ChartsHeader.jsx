@@ -84,7 +84,7 @@ const ChartsHeader = ({ category, title, chartType })  => {
       <div class="itemRow">
         <div class="itemRowCellInfo">
           <img class="circle-logo" decoding='async' src={data.baseAssetUrl} />
-          <span class="text-base text-gray-900">{data.name}</span> 
+          <span class="text-base text-gray-900 dark:text-gray-200">{data.name}</span> 
         </div>
         <div class="itemRowCellDescription">
             <span class="text-sm text-gray-500">{data.description}</span> 

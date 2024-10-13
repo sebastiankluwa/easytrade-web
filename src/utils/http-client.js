@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const defaultConfig = {
-    baseURL: "https://localhost:7290/v1",
+    baseURL: "https://localhost:5001/api/v1",
     responseType: "json",
     headers: {
         "Content-Type": "application/json"

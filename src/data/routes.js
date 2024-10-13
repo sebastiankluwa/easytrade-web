@@ -9,16 +9,6 @@ import { BsChatDots } from 'react-icons/bs';
 
 export const routes = [
     {
-      title: 'Dashboard',
-      routes: [
-        {
-          path: 'overview',
-          name: 'Overview',
-          icon: <TbLayoutDashboard />,
-        },
-      ],
-    },
-    {
       title: 'Bots',
       routes: [
         {
@@ -60,11 +50,6 @@ export const routes = [
           path: 'support/faq',
           name: 'FAQ',
           icon: <AiOutlineQuestionCircle />,
-        },
-        {
-          path: 'support/contact',
-          name: 'Contact',
-          icon: <BsChatDots />,
         }
       ],
     }
