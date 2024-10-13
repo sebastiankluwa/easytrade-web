@@ -2,7 +2,7 @@ import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 
 import { Button } from '.';
-import { chatData } from '../data/dummy';
+import { notificationsData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const Notification = () => {
@@ -18,9 +18,16 @@ const Notification = () => {
         <Button icon={<MdOutlineCancel />} color="rgb(153, 171, 180)" bgHoverColor="light-gray" size="2xl" borderRadius="50%" />
       </div>
       <div className="mt-5 ">
-        {chatData?.map((item, index) => (
+        {notificationsData?.map((item, index) => (
           <div key={index} className="flex items-center leading-8 gap-5 border-b-1 border-color p-3">
-            <img className="rounded-full h-10 w-10" src={item.image} alt={item.message} />
+            {/* <img className="rounded-full h-10 w-10" src={item.image} alt={item.message} /> */}
+            <button
+              type="button"
+              style={{ backgroundColor: currentColor }}
+              className="text-xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full  p-2.5"
+            >
+              {item.icon}
+            </button>
             <div>
               <p className="font-semibold dark:text-gray-200">{item.message}</p>
               <p className="text-gray-500 text-sm dark:text-gray-400"> {item.desc} </p>

@@ -16,5 +16,12 @@ export { default as RichStockChartComponent } from './Charts/StockChart/RichStoc
 export { default as ChartsHeader } from './Charts/ChartsHeader';
 export { default as MarketsComponent } from './Markets/MarketsComponent';
 export { default as NewsCard } from './Markets/NewsCard';
-export { default as Badge } from './Markets/Badge';
 export { default as Header } from './Header';
+export { default as BotsHeader } from './Bots/BotsHeader';
+export { default as BotsSummary } from './Bots/BotsSummary';
+export { default as BotsDetails } from './Bots/BotsDetails';
+export { default as BotDashboard } from './Bots/BotDashboard';
+export { default as BotTrades } from './Bots/BotTrades';
+export { default as BotSettings } from './Bots/BotSettings';
+export { default as CreateBotModal } from './Bots/CreateBotModal';
+export { default as Badge } from './Markets/Badge';

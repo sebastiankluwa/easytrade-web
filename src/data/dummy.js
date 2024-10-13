@@ -4,12 +4,12 @@ import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, Fi
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
-import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+import { RiContactsLine, RiSignalTowerFill, RiStockLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
-import { GiLouvrePyramid } from 'react-icons/gi';
-import { GrLocation } from 'react-icons/gr';
+import { GiAutoRepair, GiLouvrePyramid } from 'react-icons/gi';
+import { GrHostMaintenance, GrLocation } from 'react-icons/gr';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
@@ -22,6 +22,7 @@ import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
 import product8 from './product8.jpg';
+import { TbReportMoney } from 'react-icons/tb';
 
 export const gridOrderImage = (props) => (
   <div>
@@ -510,35 +511,39 @@ export const cartData = [
   },
 ];
 
-export const chatData = [
+export const notificationsData = [
   {
     image:
       avatar2,
-    message: 'Roman Joined the Team!',
-    desc: 'Congratulate him',
+    icon: <RiSignalTowerFill />,
+    message: 'New signal received',
+    desc: 'The trading algorithm MACD bot has generated a Sell signal for BTC!',
+    time: '10:08 AM',
+  },
+  {
+    image:
+      avatar2,
+    icon: <RiSignalTowerFill />,
+    message: 'New signal received',
+    desc: 'The trading algorithm MACD bot has generated a Buy signal for BTC!',
     time: '9:08 AM',
   },
   {
     image:
       avatar3,
-    message: 'New message received',
-    desc: 'Salma sent you new message',
+    icon: <GiAutoRepair />,
+    message: 'Maintenance alert',
+    desc: 'App will be undergoing maintenance on 2023/02/08 from 09:00 to 12:00. During this time, some features may be temporarily unavailable.',
     time: '11:56 AM',
   },
   {
     image:
       avatar4,
-    message: 'New Payment received',
-    desc: 'Check your earnings',
+    icon: <TbReportMoney />,
+    message: 'Portfolio alert',
+    desc: 'Your portfolio value has changed by -9.89%. Time to re-evaluate your investments.',
     time: '4:39 AM',
-  },
-  {
-    image:
-      avatar,
-    message: 'Jolly completed tasks',
-    desc: 'Assign her new tasks',
-    time: '1:12 AM',
-  },
+  }
 ];
 
 export const earningData = [
@@ -782,20 +787,20 @@ export const userProfileData = [
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
   },
-  {
-    icon: <BsShield />,
-    title: 'My Inbox',
-    desc: 'Messages & Emails',
-    iconColor: 'rgb(0, 194, 146)',
-    iconBg: 'rgb(235, 250, 242)',
-  },
-  {
-    icon: <FiCreditCard />,
-    title: 'My Tasks',
-    desc: 'To-do and Daily Tasks',
-    iconColor: 'rgb(255, 244, 229)',
-    iconBg: 'rgb(254, 201, 15)',
-  },
+  // {
+  //   icon: <BsShield />,
+  //   title: 'My Inbox',
+  //   desc: 'Messages & Emails',
+  //   iconColor: 'rgb(0, 194, 146)',
+  //   iconBg: 'rgb(235, 250, 242)',
+  // }
+  // {
+  //   icon: <FiCreditCard />,
+  //   title: 'My Tasks',
+  //   desc: 'To-do and Daily Tasks',
+  //   iconColor: 'rgb(255, 244, 229)',
+  //   iconBg: 'rgb(254, 201, 15)',
+  // },
 ];
 
 export const ordersGrid = [
@@ -3011,11 +3016,11 @@ export const dropdownData = [
   },
 ];
 export const SparklineAreaData = [
-  { x: 1, yval: 2 },
-  { x: 2, yval: 6 },
-  { x: 3, yval: 8 },
-  { x: 4, yval: 5 },
-  { x: 5, yval: 10 },
+  { x: 1, yval: 0 },
+  { x: 2, yval: 10000 },
+  { x: 3, yval: 2000 },
+  // { x: 4, yval: 5 },
+  // { x: 5, yval: 10 },
 
 ];
 
@@ -3084,45 +3089,58 @@ export const ecomPieChartData = [
 
 export const stackedChartData = [
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Aug 22', y: 0 },
+    { x: 'Sep 22', y: 0 },
+    { x: 'Oct 22', y: 0 },
+    { x: 'Nov 22', y: 0 },
+    { x: 'Dec 22', y: 12000 },
+    { x: 'Jan 23', y: 0 },
+    { x: 'Feb 23', y: 0 },
   ],
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Aug 22', y: 0 },
+    { x: 'Sep 22', y: 0 },
+    { x: 'Oct 22', y: 0 },
+    { x: 'Nov 22', y: 0 },
+    { x: 'Dec 22', y: 0 },
+    { x: 'Jan 23', y: 0 },
+    { x: 'Feb 23', y: 0 },
   ],
+  // [
+  //   { x: 'Jan', y: 111.1 },
+  //   { x: 'Feb', y: 127.3 },
+  //   { x: 'Mar', y: 143.4 },
+  //   { x: 'Apr', y: 159.9 },
+  //   { x: 'May', y: 159.9 },
+  //   { x: 'Jun', y: 159.9 },
+  //   { x: 'July', y: 159.9 },
+  // ],
+  // [
+  //   { x: 'Jan', y: 111.1 },
+  //   { x: 'Feb', y: 127.3 },
+  //   { x: 'Mar', y: 143.4 },
+  //   { x: 'Apr', y: 159.9 },
+  //   { x: 'May', y: 159.9 },
+  //   { x: 'Jun', y: 159.9 },
+  //   { x: 'July', y: 159.9 },
+  // ],
 ];
 
 export const stackedCustomSeries = [
-
-  { dataSource: stackedChartData[0],
-    xName: 'x',
-    yName: 'y',
-    name: 'Budget',
-    type: 'StackingColumn',
-    background: 'blue',
-
-  },
-
   { dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Expense',
+    name: 'Loss',
     type: 'StackingColumn',
-    background: 'red',
-
+    fill: 'rgb(239 68 68 / var(--tw-bg-opacity))',
   },
-
+  { dataSource: stackedChartData[0],
+    xName: 'x',
+    yName: 'y',
+    name: 'Profit',
+    type: 'StackingColumn',
+    fill: 'rgb(74 222 128 / var(--tw-bg-opacity))',
+  },
 ];
 
 export const stackedPrimaryXAxis = {
@@ -3138,9 +3156,9 @@ export const stackedPrimaryXAxis = {
 
 export const stackedPrimaryYAxis = {
   lineStyle: { width: 0 },
-  minimum: 100,
-  maximum: 400,
-  interval: 100,
+  minimum: 0,
+  maximum: 12000,
+  interval: 2000,
   majorTickLines: { width: 0 },
   majorGridLines: { width: 1 },
   minorGridLines: { width: 1 },
